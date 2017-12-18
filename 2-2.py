@@ -14,6 +14,6 @@ with open('2input.tsv') as numberfile:
 				for jumper in range(len(row)):
 					if jumper!=columnindex and row[jumper]>=columnvalue:
 						if int(row[jumper]) % int(columnvalue) == 0:
-							checksum+=(int(row[jumper]) / int(columnvalue) )
+							checksum+=( int(row[jumper]) / int(columnvalue) )
 							foundit=True
 
